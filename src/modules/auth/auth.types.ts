@@ -1,7 +1,9 @@
-export interface RegisterUser{
+import { UserRole } from "../user/user.types.js";
+
+export interface RegisterUser {
     name: string;
     email: string;
     password: string;
-    role: "employee" | "manager" | "finance";
+    role: UserRole;
     department: string;
 }
